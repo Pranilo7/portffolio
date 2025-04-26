@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranil Gauchan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Video Intro -->
+  <header>
+    <video id="introVideo" autoplay muted playsinline>
+      <source src="/video/Black White Blue Neon Flash Digital Opening Video Youtube Intro.mp4" type="video/mp4">
+    </video>
+    <div class="intro-overlay" id="overlayText">
+      <h1>Pranil Gauchan</h1>
+      <p>Web Dev | Designer | Tech Enthusiast</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+    <nav>
+      <div class="menu-toggle">&#9776;</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Home Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to My World</h1>
+        <p>I build immersive web experiences with a blend of <span class="highlight">creativity</span> and <span class="highlight">code</span>.</p>
+        <p class="second-line">Dive in to see my work.</p>
+        <a href="#projects" class="cta-button">Explore My Work</a>
+      </div>
+      <div id="particles-js"></div>
+    </section>
+    
+
+    <section id="projects" class="section">
+        <h2 class="section-title">🚀 Featured Projects</h2>
+      
+        <!-- Project 1: Personal Portfolio Website -->
+        <div class="project-card fade-in">
+          <h3>🧠 Personal Portfolio Website</h3>
+          <p>
+            A dynamic, dark-themed personal portfolio with an animated video intro, floating sections, and neon UI components.
+          </p>
+          <ul>
+            <li>🎥 Intro video overlayed on hero section</li>
+            <li>🎨 Neon-inspired UI, scroll animations & glowing hover effects</li>
+            <li>💡 Fully responsive layout with interactive sections</li>
+          </ul>
+          <p><strong>Tech Used:</strong> HTML, CSS, JavaScript</p>
+        </div>
+      
+        <!-- Project 2: Digital Thakali Menu -->
+        <div class="project-card fade-in delay-1">
+          <h3>🍽️ Digital Thakali Menu – Marpha Bhanchha Ghar</h3>
+          <p>
+            A sleek digital menu crafted with a cherry-themed UI and smart features to elevate the food ordering experience.
+          </p>
+          <ul>
+            <li>🍒 Cherry color palette & dark-mode design</li>
+            <li>📷 Image gallery with hover pop-out effects</li>
+            <li>🔊 Voice-based dish search (beta)</li>
+          </ul>
+          <p><strong>Tech Used:</strong> HTML, CSS, JavaScript</p>
+        </div>
+      </section>
+      
+<!-- <eperience Section -->
+      <section id="experience" class="dark-section">
+        <h2 class="section-title">💼 Experience</h2>
+        
+        <div class="experience-card fade-in">
+          <h3>🌐 Web Developer Intern – Brazzer Agency</h3>
+          <p>
+            Built responsive landing pages using HTML, CSS, and JS with custom animations that boosted load speed by 30%.
+          </p>
+          <ul>
+            <li>✨ Developed 5+ modern, responsive pages</li>
+            <li>🎨 Integrated CSS animations and hover effects</li>
+            <li>🤝 Collaborated with UI/UX designers on real projects</li>
+          </ul>
+        </div>
+      
+        <div class="experience-card fade-in delay-1">
+          <h3>👨‍🏫 Computer Teacher – Manaslu World School</h3>
+          <p>
+            Taught computer science basics including HTML and CSS to 60+ students from grade 6 to 7.
+          </p>
+          <ul>
+            <li>📚 Created custom slides, quizzes, and tutorials</li>
+            <li>💻 Hosted in-class coding sessions and competitions</li>
+            <li>🏆 Mentored students for inter-school coding events</li>
+          </ul>
+        </div>
+      
+        <div class="experience-card fade-in delay-2">
+          <h3>🚀 College Projects & Leadership</h3>
+          <p>
+            Actively led tech projects and student clubs during BCA semester, fostering a collaborative learning environment.
+          </p>
+          <ul>  
+            <li>🧠 Organized weekly coding challenges</li>
+            <li>🎤 Hosted guest lectures for 50+ participants</li>
+            <li>📂 Built mini-projects in html and css</li>
+          </ul>
+        </div>
+      </section>
+      
+<!-- Contact Section -->
+<section id="contact" class="dark-section">
+    <h2 class="section-title">📬 Contact Me</h2>
+    <div class="contact-box fade-in">
+      <p>Let’s build something epic together.</p>
+      <div class="contact-links">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gauchanpranil@gmail.com" target="_blank" class="glow-btn">📧 Email Me</a>
+        <a href="https://www.linkedin.com/in/pranil-gauchan-699644296/" target="_blank" class="glow-btn">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </section>
+  
+<!-- Footer -->
+<footer class="footer">
+    <p>
+      <span class="footer-gradient">Designed with 💙 and 🔥</span><br>
+      by <span class="signature">Pranil Gauchan</span>
+    </p>
+    <p class="tagline">Crafted in code. Fueled by caffeine. ✨</p>
+  </footer>
+  
+  
+  <script>
+    // Stop video at end and show overlay
+    const video = document.getElementById('introVideo');
+    const overlay = document.getElementById('overlayText');
+    video.addEventListener('ended', () => {
+      overlay.style.transition = 'opacity 1s ease, transform 1s ease';
+      overlay.style.opacity = '1';
+      overlay.style.transform = 'translate(-50%, -50%)';
+    });
+  </script>
+</body>
+</html>
